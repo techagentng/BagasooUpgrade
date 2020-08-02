@@ -1,0 +1,105 @@
+.shipping-container{
+		margin-bottom:60px;
+	.shipping-content{
+		border:1px solid #ececec;	
+		display: inline-block;
+		width: 100%;
+		padding:10px 0px;
+	}
+	.col-md-4{
+		text-align:center;
+		border-right:1px solid #ececec;
+		padding:10px 0px;
+		h3{
+			display: inline-block;
+			font-family: "Oswald";
+			font-weight: 700;
+			font-size: 12px;
+			letter-spacing: 3px;
+			vertical-align: 3px;
+			color: #000;
+		}
+		i{
+			margin-right:10px; 
+			font-size:18px;
+		}
+		&:last-child{
+			border-right:none;
+		}
+	}
+	&.shipping-container-home8{
+		background:#141414;
+		margin-bottom:0px;
+		padding-bottom:30px;
+		.shipping-content{
+			border:1px solid #2d2d2d;
+		}
+		.col-md-4{
+			border-color:#2d2d2d;
+			h3{
+				color: #fff;
+			}
+			i{
+				color: #fff;
+			}
+		} 
+	}
+}
+.shipping-v2{
+	background:url(../images/shipping-v2.jpg)no-repeat;
+	overflow:hidden;
+	padding:55px 0px;
+	text-align:center;
+	&.home3-shiping{
+		background: none;
+		border:3px solid #eaeaea;
+		h3{
+			color:#2b2b2b;
+			letter-spacing: 2px;
+		}
+		.col-md-3{
+			&:after{
+				background:#eaeaea;
+			}
+		}
+	}
+	i{
+		font-size: 40px;
+		color: $brand-primary;
+		margin-bottom:5px; 
+	}
+	h3{
+		font-size: 12px;
+		text-transform: uppercase;
+		color:#fff;
+		letter-spacing: 2px;
+		font-weight: 700;
+		line-height: 25px;
+		font-family: "Roboto Condensed";
+	}
+	p{
+		font-family: "Roboto";
+		font-size: 14px;
+		font-weight:300;
+		color: #898989;
+		line-height: 20px;
+	}
+	.col-md-3{
+		position: relative;
+		&:after{
+			position:absolute;
+			content: "";
+			right: 0px;
+			top: 0px;
+			width: 1px;
+			height: 80px;
+			background: #404040;
+		}
+		&:last-child{
+			&:after{
+				position:static;
+				width: 0px;
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+// Blog
+
+.blog-slider{
+	.blog-post-item{
+		.blog-post-content{
+			left: 60px;
+			right: 60px;
+		}
+	}
+}
+
+// Slider Product
+.related-products{
+	.product-details{
+		padding:60px 80px;
+	}
+}
+//News letter
+.newsletter{
+	margin-bottom:75px;
+	.col-md-5{
+		.col-md-6{
+			&:first-child{
+				.border-free-shipping{
+					padding: 40px 40px 42px;
+				}
+			}
+		}
+	}
+}
+// Images zoom
+.product-details-content{
+	.box-details-info{
+		padding:20px 40px 0;
+	}
+	.options{
+		padding:60px 40px 120px;
+		.action{
+			padding:60px 0;
+		}
+		.social{
+			a{
+				height: 70px;
+				line-height: 70px;
+			}
+		}
+	}
+	.infomation p{
+		line-height: 34px;
+	}
+}
+.breadcrumb{
+	margin-bottom:40px;
+}
+.mockup .col-md-6 .wrap-text .text{
+	padding:0 80px;
+}
+.wrap-googlemap{
+	.col-md-6{
+		&:nth-child(2n+1){
+			padding-right:15px;
+		}
+		&:nth-child(2n){
+			padding-left:15px;
+		}
+	}
+}

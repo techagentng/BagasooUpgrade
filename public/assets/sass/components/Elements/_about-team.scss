@@ -1,0 +1,119 @@
+.effect-v6{	
+	background-color: #000;
+	overflow: hidden;
+	position: relative;	
+	margin: 0 auto;
+	img {
+	    @include opacity(1);
+		@include transition (opacity 0.35s ease 0s);
+		width: 100%;
+	}
+	.action {
+	    transform: translate3d(0px, -100px, 0px);
+    	transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    	opacity: 0;
+    	position: absolute;
+    	top: 50%;
+    	width: 100%;
+    	text-align: center;
+    	i.icons{
+    		color: $gray;
+    		font-size: 22px;
+    		margin: 0 10px;
+    		&:hover{
+    			color: $brand-primary;
+	    		background: none;
+    		}
+    	}
+	}
+	
+	/* style for hover */
+	&:hover{
+		border-color: $brand-primary;
+		img {
+			@include opacity(0.3);
+		}
+		.action {
+		    opacity: 1;
+   			transform: translate3d(0px, 0px, 0px);
+		}
+
+	}
+}
+
+.about-icon{
+	.feature-box p{
+		font-family: "TXGR";
+		font-style: normal;
+	}
+}
+
+.about-content{	
+	background-color:#eee;
+	.banner-title{
+		text-align: center;
+		h3{
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 30px;
+			font-family: "TXGR";
+		}
+		p{
+			font-family: "Lora";
+			font-style: italic;
+			color: $gray;
+			line-height: 20px;
+		}
+	}
+	.effect-v6{
+		border-radius:50%;
+		background:#fff;
+		border:4px solid $brand-primary;
+		img{
+			border-radius:50%;
+		}
+	}
+}
+.our-skills{
+	h3{
+		font-family: "TXGR";
+		color: $gray;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.progress-bar-success{
+		background: $brand-primary;
+	}
+	.progress-bar{
+		box-shadow:none;
+		position: relative;
+		span{
+			position: absolute;
+			top:-30px;
+			right: -15px;
+			color: $gray;
+			font-family: "texgyreadventorbold";
+			font-size: 14px;
+		}
+	}
+	.progress{
+		border-radius:0;
+		height: 8px;
+		box-shadow:none;
+		overflow: visible;
+
+	}
+}
+@include maxtable{
+	.about-us{
+		.col-md-4{
+			&:nth-child(2){
+				.feature-box{
+					margin: 40px 0px 60px;
+				}
+			}
+		}
+		margin-bottom: 20px;
+	}
+}

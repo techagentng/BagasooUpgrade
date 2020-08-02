@@ -1,0 +1,1009 @@
+.banner-private{
+	position:relative;
+	img{
+		width: 100%;
+	}
+	.text{
+		position:absolute;
+		bottom:50px;
+		left:50px;
+		color: #333;
+		h2{
+			text-transform: uppercase;
+		}
+		p{
+			font-weight: 300;
+		}
+		img{
+			width: auto;
+		}
+	}
+	&.center{
+		.text{
+			text-align: center;
+			right:35px;
+			bottom:65%;
+			transform: translateY(50%);
+			img{
+				margin: auto;
+				margin-bottom:15px; 
+				opacity: 1;
+			}
+			h2{
+				font:400 60px/60px "Playfair Display";
+				color: #333;
+				text-transform: capitalize;
+				margin-bottom:15px;
+				padding-bottom:15px;
+				position:relative;
+			}
+			p{
+				font:300 18px/25px "Roboto Condensed";
+				color:#565656;
+			}
+		}
+	}
+}
+// Banner home 2
+
+.banner-home2{
+	img{
+		width: 100%;
+	}
+
+	.col-md-5{
+		position: relative;
+		a{
+			&:first-child{
+				margin-bottom:37px;
+			}
+		}
+		.hover-effect-border{
+			@media (min-width:768px) and (max-width:1024px){
+				width:100%;
+			}
+			display: inline-block;
+			position:relative;
+			.text{
+				position:absolute;
+				width: 100%;
+				text-align: center;
+				left: 0px;
+				top: 20%;
+				h4{
+					font-weight: 300;
+					letter-spacing: 2px;
+					color: #9a9a9a;
+					font-style: 12px;
+					text-transform: uppercase;
+					position:relative;
+					padding-bottom:15px;
+					margin-bottom:20px; 
+					&:after{
+						position:absolute;
+						content: "";
+						width: 55px;
+						height: 1px;
+						background: #000;
+						margin-left:-23px;
+						left: 50%;
+						bottom: 0px; 
+					}
+				}
+				h3{
+					font-family: "Playfair Display";
+					font-size:40px;
+					color: #000;
+					line-height: 35px;
+					margin-bottom:25px; 
+				}
+				p{
+					font-family:"Poppins";
+					font-size:13px;
+					color: #858585;
+					line-height: 20px;
+					max-width: 390px;
+					padding:0 20px;
+					margin: 0 auto;
+				}
+				button{
+					border:none;
+					color: #fff;
+					font-size:12px;
+					background:#000;
+					padding: 0px 65px;
+					height: 46px;
+					line-height: 42px;
+					margin-top:25px;
+					border:2px solid #000; 
+				}
+			}
+		}
+	}
+}
+.center{
+	img{
+		margin: auto;
+	}
+}
+// Banner header page
+.banner-header{
+	position:relative;
+	img{
+		width: 100%;
+	}
+	.text{
+		position:absolute;
+		@include size(460px,170px);
+		left: 50%;
+		top: 50%;
+		margin-left: -230px;
+		margin-top:-85px;
+		border:4px solid #fff;
+		text-align: center;
+		color: #fff;
+		padding:35px;
+		h3{
+			display: inline-block;
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 50px;
+			font-family:"Playfair Display";
+			line-height: 50px;
+			border-bottom:1px solid #fff;
+			letter-spacing: 15px;
+			padding-bottom:15px;
+		}
+		p{
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 400;
+			padding-top:10px;
+			letter-spacing: 5px;
+		}
+	}
+	&.banner-lbook3{
+		img{
+			width: 100%;
+		}
+		.text{
+			border:none;
+			img{
+				width: auto;
+			}
+			h3{
+				letter-spacing: 0px;
+				text-transform: capitalize;
+				border:none;
+				border:none;
+				font-size: 80px;
+			}
+			p{
+				font-size: 18px;
+				text-transform: none;
+				letter-spacing: 0px;
+				font-weight: 400;
+				font-family:"Playfair Display";
+			}
+		}
+		&.single-post{
+			.text{
+				width: 100%;
+				left:0px;
+				margin-left:0px;
+				h3{
+					font:400 50px/50px "Playfair Display";
+				}
+				p{
+					&.cat{
+						font:300 12px/20px "Oswald";
+						letter-spacing: 2px;
+						color: #9a9a9a;
+					}
+					font:400 13px/20px "Poppins";
+					color: #a3a3a3;
+				}
+			}
+		}
+	}
+}
+.banner-top-home3{
+	.items{
+		position:relative;
+		display: inline-block;
+		width: 100%;
+		margin-bottom:30px; 
+		.text{
+			background:rgba(255,255,255,0.3);
+			padding:30px 0px 0px 0px;
+			position:absolute;
+			top:0px;
+			right: 30px;
+			left: 30px;
+			bottom:0px;
+			margin: auto;
+			text-align: center;
+			height: 170px;
+			h3{
+				font-family: "Playfair Display";
+				font-size: 40px;
+				text-transform:capitalize;
+				color: #fff;
+				line-height:40px;
+				position:relative;
+				margin-bottom:50px;
+				&:after{
+					position:absolute;
+					left:50%;
+					bottom:-25px;
+					width: 66px;
+					margin-left:-33px;
+					height: 3px;
+					content: "";
+					background-color: #fff;
+				}
+			}
+			p{
+				font-weight: 300;
+				color: #fff;
+				letter-spacing: 4px;
+				text-transform: uppercase;
+				line-height: 30px;
+			}
+		}
+		a{
+			font-size: 12px;
+			font-weight: 700;
+			color: #fff;
+			border-bottom:1px solid #fff;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			padding-bottom:4px;
+			display: inline-block;
+			text-align: center;
+			margin: 30px 0px;
+		}
+	}
+}
+.banner-home4-top{
+	display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	.col-md-6{
+		padding:0px;
+		position:relative;
+		.col-md-12{
+			padding:0px;
+			position: relative;
+		}
+	}
+	img{
+		width: 100%;
+	}
+	.text{
+		position:absolute;
+		left: 40px;
+		bottom: 40px;
+		h3{
+			font-family: "Playfair Display";
+			font-size: 35px;
+			color: #000;
+			line-height: 30px;
+			font-weight: 400;
+			margin-bottom:10px;
+		}
+		p{
+			font-weight:300;
+			padding-left:3px;
+			font-size: 12px;
+			color: #828282;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			padding-bottom:30px;
+			position:relative;
+			&:after{
+				position:absolute;
+				content: "";
+				bottom: 0px;
+				left:3px;
+				width: 50px;
+				background:#e95252;
+				height: 3px;
+			}
+		}
+	}
+}
+// Banner home 6
+.banner-home6{
+	display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	.col-md-6{
+		padding:0px;
+		.items{
+			h3{
+				font-size: 40px;
+				letter-spacing: 10px;
+				position:relative;
+				padding-bottom:10px;
+				margin-bottom:10px;
+				margin-top:10px; 
+				&:after{
+					position:absolute;
+					content: "";
+					left: 2px;
+					right: 8px;
+					bottom:0px;
+					height: 2px;
+					background:#e95252;
+				}
+			}
+			a{
+				font-size:10px;
+				letter-spacing: 3px;
+				font-weight: 700;
+				&:hover{
+					background:none;
+				}
+			}
+			.text{
+				padding-bottom:15px;
+				left: 90px;
+				a{
+					position: absolute;
+					bottom: 0px;
+					right:10px;
+				}
+			}
+		}
+	}
+}
+.home7-banner1,.home7-banner2,.home7-banner3{
+	&.banner-private{
+		p{
+			font-size: 20px;
+			font-weight: 400;
+			text-transform:uppercase;
+			letter-spacing: 5px;
+			line-height: 20px;
+			margin-bottom:5px; 
+		}
+		h3{
+			font-size: 30px;
+			letter-spacing: 5px;
+			position:relative;
+			padding-bottom:10px;
+			position: relative;
+			line-height: 30px;
+			margin-bottom:30px; 
+			&:after{
+				position:absolute;
+				content: "";
+				left: 0px;
+				right:5px;
+				bottom: 0px;
+				height: 2px;
+				background:#fff;
+			}
+		}
+		a{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 10px;
+			padding-left:30px;
+			&:hover{
+				background:none !important;
+			}
+		}
+		.text{
+			left:140px;
+			bottom:180px;
+		}
+	}
+}
+.home7-banner2{
+	&.banner-private{
+		text-align: right;
+		.text{
+			left: inherit;
+			right: 140px;
+		}
+	}
+}
+.banner-home7-top{
+	display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	&.banner-private{
+		text-align: center;
+		.text{
+			left: 0px;
+			width: 100%;
+			top: 23%;
+			text-align: center;
+			bottom:inherit;
+			margin: 0 auto;
+			color: #000;
+			padding:0 20px;
+			p{
+				max-width: 960px;
+				margin: 0 auto;
+				font-size: 16px;
+				font-family: "Poppins";
+				color: #6a6a6a;
+				text-transform: none;
+				letter-spacing: 0px;
+				line-height: 30px;
+				margin-bottom:50px; 
+			}
+			h3{
+				text-transform: none;
+				font-size: 40px;
+				font-family:"Playfair Display";
+				padding-bottom:30px;
+				margin-bottom:30px; 
+				position:relative;
+				&:after{
+					position:absolute;
+					content: "";
+					left: 50%;
+					bottom: 0px;
+					width: 66px;
+					margin-left:-33px; 
+					height: 2px;
+					background:#000;
+				}
+			}
+			img{
+				margin-bottom:20px; 
+			}
+			a{
+				font-size: 12px;
+				color: #000;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-weight: 700;
+				display: inline-block;
+				padding:8px 20px;
+				border:2px solid #000;
+			}
+		}
+	}
+}
+.blog-post-container-v2{
+	&.blog-post-container{
+		margin: 0px;
+		.blog-post-item{
+			margin: 0px;
+			.blog-post-content{
+				left: -1px;
+				right:-1px;
+				bottom:4px;
+				background:rgba(#000, 0.3);
+				.cat{
+					color: #fff;
+					margin: 15px 0px !important;
+					&:after{
+						background:#6f6f6f;
+						bottom:-10px;
+					}
+				}
+				.blog-title{
+					color: #fff;
+					margin-bottom:35px; 
+				}
+				&:before{
+					border:none;
+					position:static;
+				}
+			}
+		}
+	}
+}
+.banner-hom7-center{
+	display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	img{
+		width: 100%;
+	}
+	.col-md-6{
+		padding:0px;
+	}
+}
+// Banner private-v2
+.banner-private-v2{
+	position:relative;
+	.text{
+		position:absolute;
+		width: 100%;
+		text-align: center;
+		left: 0px;
+		top: 20%;
+		h4{
+			font-weight: 300;
+			letter-spacing: 2px;
+			color: #9a9a9a;
+			font-style: 12px;
+			text-transform: uppercase;
+			position:relative;
+			padding-bottom:15px;
+			margin-bottom:20px; 
+			&:after{
+				position:absolute;
+				content: "";
+				width: 55px;
+				height: 1px;
+				background: #000;
+				margin-left:-23px;
+				left: 50%;
+				bottom: 0px; 
+			}
+		}
+		h3{
+			font-family: "Playfair Display";
+			font-size:40px;
+			color: #000;
+			line-height: 35px;
+			margin-bottom:25px; 
+		}
+		p{
+			font-family:"Poppins";
+			font-size:13px;
+			color: #858585;
+			line-height: 20px;
+			max-width: 390px;
+			padding:0 20px;
+			margin: 0 auto;
+		}
+		button{
+			border:none;
+			color: #fff;
+			font-size:12px;
+			background:#000;
+			padding: 0px 65px;
+			height: 46px;
+			line-height: 42px;
+			margin-top:25px;
+			border:2px solid #000; 
+		}
+	}
+}
+.banner-hom7-center{
+	.banner-private-v2{
+		text-align: center;
+		.text{
+			width: 555px;
+			height: 350px;
+			background:rgba(#fff, 0.8);
+			top:50%;
+			left: 50%;
+			margin-top:-175px;
+			margin-left:-273px;
+			h4{
+				margin-top:60px; 
+			}
+		}
+	}
+}
+.banner-home7-center1,.banner-home7-center2{
+	.text{
+		text-align: center;
+		left: 0px;
+		width: 100%;
+		span{
+			font-size: 80px;
+			position:relative;
+			padding-bottom:25px;
+			margin-bottom:25px; 
+			display: inline-block;
+			&:after{
+				position:absolute;
+				content: "";
+				left:50%;
+				bottom:0px;
+				width: 60px;
+				height: 2px;
+				margin-left:-30px; 
+				background:#fff;
+			} 
+		}
+		h3{
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			max-width: 265px;
+			line-height: 25px;
+			margin: 0 auto;
+		}
+		bottom:inherit;
+		top: 25%;
+		position:absolute;
+	}
+}
+ .banner-home7-center2{
+ 	.text{
+ 		text-align: center;
+ 		span,h3{
+ 			color: #000;
+ 			max-width: 100%;
+ 		}
+ 		span{
+ 			font-size: 80px;
+ 			&:after{
+ 				background: #000;
+ 			}
+ 		}
+ 	}
+ }
+ .banner-home8-top{
+ 	.text{
+ 			width:100%;
+ 			text-align: center;
+ 			left: 0px;
+ 			bottom:inherit;
+ 			top:50%;
+ 			margin-top: -50px;
+ 			h3{
+				font-family: "Playfair Display";
+				font-size: 50px;
+				text-transform: capitalize;
+				letter-spacing: 0px;
+				margin-bottom: 5px;
+				line-height: 50px;
+ 			}
+ 			p{
+ 				font-size: 12px;
+ 				color: #cecece;
+ 				line-height: 20px;
+ 				padding-bottom:20px;
+ 				position: relative;
+ 				&:after{
+ 					position:absolute;
+ 					content: "";
+ 					left: 50%;
+ 					bottom:0px;
+ 					width:80px;
+ 					margin-left:-40px;
+ 					background:#e95252;
+ 					height: 2px; 
+ 				}
+ 			}
+ 		}
+ 	.col-md-3{
+ 		padding:0px;
+ 		
+ 	}
+	.col-md-12{
+		padding:0px;
+	}
+	.col-md-6{
+		padding:0px;
+	}
+	&.banner-home8-center{
+		.text{
+			h3{
+				margin-bottom:15px; 
+			}
+			p{
+				padding-top:15px;
+				&:after{
+					bottom:inherit;
+					top: 0px;
+				}
+			}
+			a{
+				&:hover{
+					background:none;
+				}
+			}
+		}
+	}
+ }
+.home3-banner{
+	background:#222;
+	float:left;
+	padding:30px 0px;
+	@media(min-width:768px) and (max-width:1200px){
+		.col-md-4{
+			.post-item{
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+}
+ .banner-video{
+ 	position:relative;
+ 	img{
+ 		width: 100%;
+ 	}
+ 	.text{
+ 		position:absolute;
+ 		left: 0px;
+ 		width: 100%;
+ 		top:40%;
+ 		color:#fff;
+ 		text-align: center;
+ 		.icons{
+ 			height: 154px;
+ 			width: 154px;
+ 			background:url(../images/icon-video.png)no-repeat;
+ 			display: inline-block;
+ 		}
+ 		h3{
+ 			font:400 30px/30px "Oswald";
+ 			text-transform: uppercase;
+ 			letter-spacing: 15px;
+ 			margin-top:50px; 
+ 		}
+ 	}
+}
+.banner-home-collec1{
+	&.related-products{
+		padding:0px;
+		.product-details{
+			padding:0px;
+			&:after{
+				background: none;
+				height: 0px;
+				width: 0px;
+			}
+			img{
+				width: 100%;
+			}
+			.text{
+				position:absolute;
+				top: 30%;
+				left: 150px;
+				max-width:520px;
+			}
+			h4{
+				font-weight: 300;
+				color: #9d9d9d;
+			}
+		}
+	}
+}
+.banner-product-details3{
+	position:relative;
+	margin-bottom:30px;
+	img{
+		width: 100%;
+	}
+	h3{
+		position:absolute;
+		width: 100%;
+		text-align: center;
+		font:400 50px/50px "Oswald";
+		color: #fff;
+		top:50%;
+		left: 0px;
+		margin-top:-25px;
+		letter-spacing: 10px; 
+	}
+}
+
+.banner-header{
+	a.action{
+		display: inline-block;
+		width: 19px;
+		height: 59px;
+		position:absolute;
+		bottom: 80px;
+		left: 50%;
+		margin-left:-10px;
+		background:url(../images/down-white.png)no-repeat;
+	}
+}
+.banner-por-single{
+	text-align:center;
+	img{
+		display: inline-block;
+	}
+}
+.special{
+	padding:40px 0px;
+	@media (min-width:1200px){
+		.col-md-7{
+			@include rtl-padding-right(30px);
+		}
+	}
+	&.home3-special{
+		img{
+			max-width: 570px;
+			box-shadow: 0px 8px 33px 0px rgba(0, 0, 0, 0.13);
+		}
+		.special-content{
+			h5{
+				padding-bottom:0px;
+				&:after{
+					width: 0px;
+				}
+			}
+			.time{
+				background:#333;
+				display: inline-block;
+				width:auto;
+				padding:50px 60px;
+				@include rtl-margin-left(-80px);
+				margin-bottom:50px; 
+				.distance{
+					background:none;
+					margin: 0px;
+					border-right:1px solid #fff;
+					border-radius:0px;
+					width: 120px;
+					.number{
+						font-size: 48px;
+						line-height: 50px;
+						font-weight: 300;
+					}
+					&:last-child{
+						border-right:none;
+					}
+					.text{
+						color:#fff;
+					}
+				}
+			}
+			a{
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				margin-right:10px;
+				background:#333;
+				text-align: center;
+				border:1px solid #333;
+				transition:all 0.3s ease 0s;
+				&:hover{
+					background:#fff;
+					i{
+						color: #333;
+					}
+				}
+				i{
+					color: #fff;
+					line-height: 78px;
+					font-size: 36px;
+				}
+				&:last-child{
+					margin-right:0px; 
+				} 
+			}
+		}
+	}
+}
+.special-content{
+	font-family:"Playfair Display";
+	@include rtl-text-align-left;
+	padding-top:50px;
+	h4{
+		font-size: 30px;
+		text-transform: capitalize;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+	h3{
+		font:700 60px/60px "Roboto";
+		color:$brand-primary;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	h5{
+		text-transform:uppercase;
+		position: relative;
+		margin-bottom: 20px;
+		padding-bottom:20px;
+		font:400 24px/25px "Roboto";
+		color:#2b2b2b;
+		&:after{
+			position: absolute;
+			width:110px;
+			height: 1px;
+			background:#bbb;
+			bottom:0px;
+			@include rtl-left(0px);
+			content: "";
+		}
+	}
+	.time{
+		@include rtl-text-align-left;
+		.distance{
+			background:#fff;
+			padding:10px;
+			border-radius:5px;
+			box-shadow: 0px 0px 13px 0px rgba(84, 76, 76, 0.1);
+			width: 80px;
+			height: 80px;
+			margin:0 5px;
+			text-align: center; 
+			&:first-child{
+				margin-left:0px;
+			}
+			&:last-child{
+				margin-right:0px;
+			}
+			.number{
+				font:300 32px "Roboto";
+				color: $brand-primary;
+				display: block;
+			}
+			.text{
+				font:300 12px "Roboto";
+				color:#333;
+				display: block;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.instagram{
+	.item{
+		display: inline-block;
+		float: left;
+		width: 12.5%;
+		img{
+			width: 100%;
+		}
+	}
+}
+// latest home 3
+.home3-latest-news{
+	h2{
+		font:400 40px "Playfair Display";
+		color: #2b2b2b;
+		padding-bottom:10px;
+		margin-bottom:10px;
+		position:relative;
+		&:after{
+			position: absolute;
+			content: "";
+			left: 0px;
+			width: 100px;
+			bottom: 0px;
+			height: 2px;
+			background:$brand-primary;
+		} 
+	}
+	.item{
+		padding:30px 0px;
+		border-bottom:1px solid #cdcdcd;
+		&:last-child{
+			border:none;
+		}
+		.date{
+			text-align: center;
+			color: #333;
+			@include rtl-margin-right(20px);
+			.day{
+				font:400 60px "Roboto";
+			}
+			.month{
+				font:400 14px "Roboto";
+			}
+		}
+		.text{
+			.title{
+				color: #333;
+				font:400 20px "Playfair Display";
+				margin-bottom:10px; 
+				display: block;
+				&:hover{
+					color: $brand-primary;
+				}
+			}
+
+			p{
+				font:300 14px/20px "Roboto";
+			}
+			.read-more{
+				color: $brand-primary;
+				font:300 14px/20px "Roboto";	
+			}
+		}
+	}
+}
+.home2-head{
+	padding:30px 15px;
+}

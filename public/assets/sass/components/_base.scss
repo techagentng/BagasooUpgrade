@@ -1,0 +1,758 @@
+/** 2.2. Default base **/
+/** 2.2.1.	Button **/
+.dropdown-menu{
+	background-color: $gray-dark;
+	border-radius: 0px;
+	box-shadow: none;
+	margin-top: 10px;
+	padding: 0px;
+	transform:translate(0px, 20px);
+	@include transition(all 0.3s ease 0s);
+	&.hover{
+		transform:translate(0px, 0px);
+	}
+	li{
+		&:last-child{
+			border-bottom: none;
+		}
+		border-bottom: 1px solid #444;		
+		a{
+			&:hover,&:active,&:focus{
+			background: $gray-dark !important;
+			color: #ddd;
+			}
+			color: $gray-light;
+			font-size: 11px;
+			line-height: 40px;
+			display: inline-block;
+			text-transform: uppercase;
+			width: 100%;
+			padding: 5px 20px;
+		}
+	}
+}
+.padding-rl-15{
+	padding-left:15px;
+	padding-right:15px;
+}
+iframe{
+	border:none;
+}
+.box{
+	display:inline-block;
+	width:100%;
+}
+.width-100{
+	width:100%;
+}
+.center{
+	text-align:center;
+}
+.border-bottom-home1{
+	height:6px;
+	width:100%;
+	background:url(../images/Hermes-home1-border-bottom.png)repeat-x;
+}
+.tooltip.right{
+	max-width:200px;
+}
+.box{
+	display:inline-block;
+	width:100%;
+}
+.dropcap{
+	display:inline-block;
+	width:56px;
+	height:56px;
+	text-align:center;
+	float:left;
+	background:#000;
+	color:#fff;
+	margin-right:10px;
+	margin-top:7px;
+	line-height:56px;
+	font:500 30px "Poppins";
+}
+.title-text{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 30px 0px;
+	position: relative;
+	h3{
+		font-size: 14px;
+		color: #000;
+		text-transform: uppercase;
+		line-height: 30px;
+		display: inline-block;
+		padding-bottom:10px;
+		position: relative;
+		letter-spacing: 2px;
+		font-weight: 700;
+		&:after{
+			position:absolute;
+			content: "";
+			height: 2px;
+			width: 50px;
+			left: 50%;
+			bottom:0px;
+			margin-left:-25px;
+			background:#000;
+		}
+	}
+	p{
+		font-size: 14px;
+		color: $gray-light;
+		line-height: 25px;
+		font-family: "TXGR";
+		margin-top: 10px;
+	}
+	&.title-text-v2{
+		text-align: left;
+		margin: 30px 0px;
+		&:before{
+			position: static;
+		}
+		h3{
+			font-size: 24px;
+			padding: 0;			
+		}
+		&.title-text-v3{
+			position: relative;
+			h3{
+				font-size: 36px;
+				color: $gray;
+				position: relative;
+				&:after{
+					position: absolute;
+					content:"";
+					top: -50px;
+					background: $home-v3-color;
+					height: 5px;
+					width: 30px;
+					left: 0px;
+				}
+			}
+			p{
+				font-family: "Lora";
+				font-style: italic;
+				color: $gray-light;
+				width: 100%;
+				margin-top: 30px;
+			}
+			ul.tabs{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				li{
+					font-family: "Lora";
+					font-style: italic;
+					font-weight: 700;
+					font-size: 18px;
+					text-transform: capitalize;
+					color: $gray-light;
+					&.active,&:hover{
+						color: $home-v3-color;
+						border-bottom: 1px solid $home-v3-color;
+					}
+				}
+			}
+		}
+	}
+	&.title-about{
+		margin-top: 0px;
+		h3{
+			background:none;
+		}
+		&:before{
+			position: static;
+		}
+	}
+	&.border-color-red{
+		h3{
+			&:after{
+				background:#e95252;
+			}
+		}
+	}
+}
+.title-text-v2{
+	text-align:center;
+	h3{
+		font:400 48px/50px "Playfair Display";
+		color:#2b2b2b;
+		text-transform: capitalize;
+		margin-bottom:20px; 
+	}
+}
+.title-v1{
+	width:100%;
+	border-bottom:1px solid #cacaca;
+	float: left;
+	margin-bottom:30px;
+	h3{
+		display: inline-block;
+		float: left;
+		font:400 24px/30px "Oswald";
+		color:#333;
+		position: relative;
+		padding-bottom:10px;
+		text-transform: uppercase;
+		&:after{
+			position: absolute;
+			content: '';
+			left: 0px;
+			bottom:-1px;
+			background:#333;
+			right: 0px;
+			height: 2px;
+		}
+	}
+	span{
+		font-weight: 400;
+	}
+	.orther-link{
+		margin-top:5px; 
+		float: right;
+		text-align: right;
+		li{
+			display: inline-block;
+			a{
+				font:400 14px/20px "Lato";
+				color:#999;
+				margin-left:10px; 
+				&:hover{
+					color:$brand-primary;
+				}
+			}
+			&:first-child{
+				a{
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
+.tile-lookbook-v2{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	padding-top:60px;
+	padding-bottom:20px;
+	span.icons{
+		font-size: 80px;
+		color: #000;
+	}
+	p{
+		font:400 24px "Playfair Display";
+		color: #000;
+		line-height: 30px;
+		padding:20px;
+		max-width: 1120px;
+		margin: 0 auto;
+		b{
+			font-weight: 700;
+		}
+		span{
+			font-style: italic;
+		}
+	}
+	h3{
+		font-size: 14px;
+		font-weight: 700;
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		line-height: 30px;
+		position:relative;
+		padding-top:20px;
+		margin-top:10px; 
+		&:after{
+			position:absolute;
+			content: "";
+			left: 50%;
+			width:60px;
+			height: 2px;
+			background:#e8e8e8;
+			margin-left:-30px; 
+			top:0px;
+		}
+	}	
+}
+.title-product{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	h3{
+		font-weight: 700;
+		font-size:14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		display: inline-block;
+		position:relative;
+		padding-bottom:15px;
+		margin-bottom:30px; 
+		&:after{
+			position:absolute;
+			content: "";
+			left: 50%;
+			height: 2px;
+			width: 50px;
+			background:#000;
+			margin-left:-25px;
+			bottom:0px; 
+		}
+	}
+}
+.slider-product{
+	&.tabs-title-v2{
+		text-align: center;
+		position: relative;
+		&:before{
+			content: "";
+			background:#e8e8e8;
+			width: 100%;
+			left: 0px;
+			top: 50px;
+			height: 1px;
+			position: absolute;
+		}
+		.tabs{
+			border: none;
+			position: relative;
+			width: auto;
+			margin: 0 auto 30px;
+			background:#fff;
+			li{
+				&:hover,&.active{
+					&:before{
+						bottom:-8px;
+						background:#e95252;
+					}
+				}
+			}
+		}
+	}
+} 
+
+ul.tabs.tabs-title.tabs-title-por{
+	li{
+		padding:0 30px;
+	}
+}
+.button-v2{
+	padding: 7px 10px;
+	border-radius:0px;
+	border:2px solid #fff;
+	color: #fff;
+	display:inline-block;
+	text-transform:uppercase;
+	font-family:"Oswald";
+	letter-spacing:2px;
+	font-size:10px;
+	&.hover-black{
+		padding: 7px 10px !important;
+	}
+	&.color-black{
+		color: #000;
+		border-color:#000;
+	}
+}
+.hover-images{
+	overflow:hidden;
+	display:inline-block;
+	img{
+		@include transition(all 0.5s ease 0s);
+	}
+	&:hover{
+		img{
+			transform:scale(1.05);
+		}
+	}
+}
+.title-v2{
+	width:100%;
+	border-bottom:3px solid #cacaca;
+	margin-bottom:30px;
+	h3{
+		display: inline-block;
+		font-size: 24px;
+		font-family: "Oswald";
+		color: $gray-dark;
+		font-weight:400;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom:10px;
+		color:#cacaca;
+		&:after{
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 3px;
+			background:#db2e1c;
+			bottom: -3px;
+			left: 0px;
+		}
+	}
+}
+.link-icon-black{
+	@include size(10px,10px);
+	@include transition(all 0.3s ease 0s);
+	background:url(../images/Uno-button-icon.png)no-repeat scroll center top;
+	display:inline-block;
+	margin-left:5px;
+}
+.link-icon-white{
+	@include size(10px,10px);
+	@include transition(all 0.3s ease 0s);
+	background:url(../images/Uno-button-icon.png)no-repeat scroll center bottom;
+	display:inline-block;
+	margin-left:5px;
+}
+.link-icon-gray{
+	@include size(10px,10px);
+	@include transition(all 0.3s ease 0s);
+	background:url(../images/Uno-button-icon.png)no-repeat scroll center -41px;
+	display:inline-block;
+	margin-left:5px;
+}
+.title-page{
+	h3{
+		font-size: 80px;
+		display: inline-block;
+		width: 100%;
+		font-family: "Playfair Display";
+		color: #000;
+		text-align:center;
+		position:relative;
+		line-height: 55px;
+		padding-bottom:30px;
+		margin-bottom:30px; 
+		&:after{
+			position:absolute;
+			content: "";
+			left: 50%;
+			bottom:0px;
+			width: 225px;
+			height: 7px;
+			background:url(../images/title-page-border.jpg)no-repeat;
+			margin-left:-112px; 
+		}
+	}
+	&.size-50{
+		h3{
+			font-size: 50px;
+			margin: 10px;
+		}
+		p{
+			text-align: center;
+			font:300 12px/20px "Oswald";
+			color: #a5a5a5;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom:30px; 
+		}
+	}
+}
+ul.tabs{
+	&.title{
+		span{
+			font-size: 30px;
+			color: #222;
+		}
+		li{
+			font-size: 30px;
+			color: #222;
+			&.active,&:hover{
+				color: $brand-home2;
+			}
+		}
+		
+		p{
+			font-family: "TXGR";
+			font-size: 13px;
+			color: $gray-light;
+		}
+	}
+}
+ul.bastian{
+	display:inline-block;
+	width:100%;
+	margin-bottom:100px;
+	li{
+		float:left;
+		width: 33.33%;
+		text-align: center;
+		display: inline-block;
+		padding:15px 0px;
+		border:1px solid #000;
+		&:first-child{
+			border-right:none;
+		}
+		&:last-child{
+			border-left:none;
+		}
+		p{
+			font:300 12px/20px "Oswald";
+			color: #7c7c7c;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			span{
+				font-weight: 700;
+				color: #000;
+			}
+		}
+	}
+}
+.content-text{
+	h3{
+		font:400 25px/30px "Playfair Display";
+		color: #000;
+		text-transform: capitalize;
+		padding-bottom:15px;
+		margin-bottom:20px;
+		position:relative;
+		&:after{
+			position:absolute;
+			content: "";
+			left: 0px;
+			width: 50px;
+			height: 1px;
+			background:#000;
+			bottom:0px;
+		} 
+	}
+	p{
+		font:400 13px/20px "Poppins";
+		color: #858585;
+
+	}
+	&.center{
+		text-align: center;
+		h3{
+			&:after{
+				left: 50%;
+				margin-left:-25px; 
+			}
+		}
+	}
+}
+.breadcrumb{
+	background: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:3px solid #2e2e2e;
+	li{
+		font-size: 12px;
+		display: inline-block;
+		font-family: "Poppins";
+		font-weight: 400;
+		padding-right:20px;
+		position:relative;
+		&:last-child{
+			&:after{
+				content: "";
+			}
+		}
+		&:after{
+			position:absolute;
+			content: "";
+			right: 8px;
+			font-family: "FontAwesome";
+			font-size: 12px;
+			top: -1px;
+			color: #fff;
+		}
+		&.active{
+			color: #717171;
+		}
+		a{
+			color: #fff;
+		}
+	}
+
+}
+.return-home{
+	a:first-child{
+		margin-right: 20px;
+	}
+}
+.banner-grid{
+	padding: 0px;
+	img{
+		width: 100%;
+	}
+}
+.bg-white{
+	background-color: #fff;
+}
+.link-v1{
+	font:700 16px/38px "Roboto Condensed";
+	color:#333;
+	width:180px;
+	text-align:center;
+	display:inline-block;
+	border:1px solid #333;
+	text-transform:uppercase;
+	color:#333;
+	&.color-brand{
+		color:$brand-primary;
+		border-color:$brand-primary;
+	}
+	&:hover{
+		background:#333;
+		color:#fff;
+		border-color:#333;
+	}
+}
+.link-ver1{
+	display:inline-block;
+	height:60px;
+	min-width:60px;
+	padding:0 20px;
+	text-align:center;
+	background:transparent;
+	border:2px solid #3e3e3e;
+	color:#fff;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	i{
+		font-size: 18px;
+		line-height: 56px;
+		color: #ffffff;
+		font-weight: 400;
+	}
+	&:hover{
+		border-color:#e95252;
+		color: #e95252;
+		i{
+			color: #e95252;
+		}
+	}
+}
+.acc-login{
+	.form-group{
+		.btn{
+			&:nth-child(2n+1){
+				width: 48%;
+				margin-right: 2%;
+				float: left;
+				padding: 5px;
+			}
+			&:nth-child(2n){
+				margin-left: 2%;
+				width: 48%;
+				float: left;
+				padding:5px;
+			}
+		}
+	}
+}
+.margin-top-30{
+	margin-top:30px;
+}
+.color-red{
+	color: #ff1313;
+} 
+.button1{
+	font-family: "Oswald";font-weight:700;
+	color: #000;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background:none;
+}
+.button2{
+	width: 140px;
+	height: 40px;
+	line-height: 36px;
+	border: 2px solid $brand-primary;
+	color: $brand-primary;
+	background: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13px;
+	display: inline-block;
+}
+
+// Hover Control Wrap
+.hover-control-wrap{
+	.owl-carousel{
+		&:hover{
+			.owl-prev{
+				opacity: 0;
+				transform:translate3d(-60px, 0px, 0px);
+			}
+			.owl-next{
+				opacity: 0;
+				transform:translate3d(60px, 0px, 0px);
+			}
+		}
+	}
+	&:hover{
+		.owl-carousel{
+			.owl-prev,.owl-next{
+				opacity: 100;
+				transform:translate3d(0px, 0px, 0px);
+			}
+		}
+	}
+}
+
+// Hover Effect Images
+.hover-effect-images,.hover-effect-images-ver2{
+	display:inline-block;
+	width:100%;
+	overflow:hidden;
+	position: relative;
+	img{
+		@include transition(all 900ms ease 0s);
+
+	}
+	&:before{
+		background:rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+		bottom:0px;
+		content: "";
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 99;
+		@include transition(all 900ms ease 0s);
+	}
+	&:hover{
+		img{
+			transform:scale(1.1);
+		}
+		&:before{
+			left: 50%;
+			opacity: 1;
+			right: 50%;
+		}
+	}
+}
+.hover-effect-images-ver2{
+	&:after{
+		background:rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+		bottom:0px;
+		content: "";
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 99;
+		@include transition(all 900ms ease 0s);
+	}
+	&:hover{
+		&:after{
+			top: 50%;
+			bottom: 50%;
+			opacity: 1;
+		}	
+	}
+};

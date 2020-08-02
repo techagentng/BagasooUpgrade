@@ -1,0 +1,602 @@
+%style_link{
+	text-transform: capitalize;
+	color: #000;
+	font:300 12px "Oswald";
+	letter-spacing:2px;
+	text-transform:uppercase;
+	&:hover{
+		color: $brand-primary;
+	}	
+}
+
+.widget{
+	color: #666;
+	margin-bottom: 30px;
+	&.social{
+		margin: 0 -3px;
+		margin-bottom:30px; 
+		width: 100%;
+		float: left;
+		.item{
+			padding:0px 3px;
+			color:#fff;
+			text-align: center;
+			display: inline-block;
+			width: 33.33%;
+			float: left;
+			&.facebook{
+				.bg{
+					background:#3f67c0;
+				}
+			}
+			&.twitter{
+				.bg{
+					background:#35b5eb;
+				}
+			}
+			&.google{
+				.bg{
+					background:#eb5b4c;
+				}
+			}
+			.bg{
+				padding:30px 0px;
+				i{
+					font-size: 40px;
+					margin-bottom:20px; 
+				}
+				.count,.text{
+					font:400 14px/20px 'Lato';
+				}
+				.count{
+					margin-bottom:5px; 
+				}
+			}
+		}
+	}
+	&.size-20{
+		h3.widget-title{
+			font-size: 20px;
+		}
+	}
+	&.tag-could{
+		.widget-content{
+			margin-top:30px;
+			a{
+				display: inline-block;
+				margin-bottom:10px;
+				margin-right:5px;
+				padding:0px 10px;
+				text-transform: capitalize;
+				font:400 14px/30px "Lato";
+				color:#000;
+				background:#e5e5e5;  
+				transition:all 0.4s ease 0s;
+				&:hover{
+					background:#000;
+					color:#fff;
+				}
+			}
+		}
+	}
+	.post-item{
+		margin-bottom:30px;
+		&:last-child{
+			margin-bottom:0px; 
+		} 
+	}
+	.content{
+		padding:15px;
+		border:1px solid #efefef;
+	}
+	&.bottom-home1{
+		padding: 0px;
+	}
+	&.border-bottom{
+		.widget-title{
+			&:after{
+				@include size(0px,0px);
+			}
+			border-bottom:1px solid $gray-lighter;
+		}
+	}
+	&.post-col{
+		@media(max-width:1200px) and (min-width:768px){
+			.post-item{
+				width: 33.33%;
+				float: left;
+			}
+		}
+	}
+	.tabs{
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+		li{
+			h3{
+				font:400 24px "Oswald";
+				color:#bcbcbc;
+				position:relative;
+				display: inline-block;
+				&:after{
+					left: 0px;
+					width: 0px;
+					content: '';
+					position: absolute;
+					height: 2px;
+					background:#333;
+					bottom:-8px;
+					transition:all 0.3s ease 0s;
+				}
+			}
+			display: inline-block;
+			width: 33.33%;
+			text-align: center;
+			float: left;
+			border-bottom:none;
+			cursor: pointer;
+			padding-bottom:0px;
+			&:hover,&.active{
+				h3{
+					color:#000;	
+					&:after{
+						width: 100%;
+					}
+				}
+			}
+			&:last-child{
+				text-align: right;
+			}
+			&:first-child{
+				text-align: left;
+			}
+		}
+	}
+	&.tweetz{
+		border:1px solid #efefef;
+		.head{
+			padding:30px;
+			.box{
+				background:#24b4ff;
+				color:#fff;
+			}
+			.icon,.text{
+				display: table-cell;
+				vertical-align: middle;
+				height: 70px;
+			}
+			.icon{
+				text-align: center;
+				width:70px;
+				background:#06a1f1; 
+			}
+			i.fa{
+				font-size: 24px;
+				display: inline-block;
+				border-radius:50%;
+				border:2px solid #fff;
+				padding:15px;
+			}
+			.text{
+				padding-left:20px;
+				h3{
+					font:400 24px "Lato";
+					color:#fff;
+				}
+				p{
+					font:400 14px "Lato";
+					color:#fff;
+				}
+			}
+		}
+		p{
+			font:400 14px/25px "Lato";
+			color:#999;
+			a{
+				color:#24b4ff;
+			}
+			span{
+				color:#555;
+				&.color{
+					color:#db2e1c;
+				}
+			}
+		}
+		.item{
+			padding:0 30px;
+			&:hover{
+				background:#fafafa;
+				position: relative;
+				&:after{
+					position: absolute;
+					content: '';
+					height: 100%;
+					width: 5px;
+					left: 0px;
+					top:0px;
+					background:#db2e1c;
+				}
+			}
+		}
+		.bottom{
+			padding:20px 30px;
+			border-top:1px solid #efefef;
+		}
+	}
+	&.review{
+		h3 a{
+			font:400 16px/20px "Oswald";
+			color:#000;
+			&:hover{
+				color:$brand-primary;
+			}
+		}
+		.description{
+			font:400 14px/20px "Lato";
+			color:#9a9a9a;
+			margin: 10px 0px;
+		}
+		.user{
+			font:700 14px/20px "Lato";
+			color:#000;
+		}
+		.date{
+			font:400 13px "Lato";
+			color:#9a9a9a;
+		}
+		.item{
+			margin-bottom:30px; 
+		}
+		.widget-content{
+			padding-top:30px;
+			margin-bottom:30px; 
+		}
+	}
+	.tab-container{
+		padding:15px;
+		border:1px solid #efefef;
+	}
+	.widget-title{
+		color: #333;
+		text-transform: uppercase;
+		font-style: normal;
+		padding-bottom: 10px;
+		position: relative;
+		font:400 24px "Oswald";
+		text-transform: uppercase;
+		display: inline-block;
+		width:auto;
+		&:after{
+			position: absolute;
+			content: "";
+			bottom:0px;
+			left: 0;
+			height: 2px;
+			background:#000;
+			right:0px;
+		}
+	}
+	ul.product-categories{
+		margin-bottom: 30px;
+		li{
+			border-bottom: 1px solid $gray-lighter;
+			line-height: 30px;
+			display: block;
+			position: relative;
+			margin-bottom: 10px;
+			padding-bottom:12px;
+			padding-top:0px;
+			&.hassub{
+				ul{
+					padding-top:12px;
+					margin-top:12px; 
+					border-top:1px dashed #eeeeee;
+					li{
+						padding-left:20px;
+					}
+				}
+			}
+			i{
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding: 9px;
+				cursor: pointer;
+				color: #000;
+				&.active::before{
+					content: "\f0d7";
+				}
+			}
+			a{
+				text-transform: uppercase;
+				color: #000;
+				font:300 12px "Oswald";
+				letter-spacing: 2px;
+				font-style: normal;
+				&:before{
+					font-family: "FontAwesome";
+					font-size: 12px;
+					color: #a1a1a1;
+					content: "";
+					margin-right:5px; 					
+				}
+			}
+		}
+		ul{
+			display: none;
+			margin: 0px;
+			border-top: 1px solid $gray-lighter;
+			padding: 6px 0px;
+			li{
+				border-bottom: none;
+				margin-bottom: 0px;				
+				a{
+					@extend %style_link;
+					transition: all 0.3s ease-out 0s;
+					&:hover{
+						margin-left: 15px;
+					}
+				}
+				i{
+					display: none;
+				}
+			}
+		}
+	}
+	.banner{
+		border:1px solid #cdcdcd;
+		padding:20px;
+	}
+	&.sidebar-newsletter{
+		background: $brand-home3;
+		padding: 20px;
+		h3{	
+			color: #fff;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #aedaee;
+			margin-bottom:20px; 
+			margin-top:10px; 
+		}
+		p{
+			color: #fff;
+			font-size: 13px;
+			line-height: 15px;
+			margin-bottom:20px; 
+		}
+		form{
+			position: relative;
+			input{
+				background: #fff;
+				border:none;
+				font-size: 12px;
+				height: 35px;
+				width: 100%;
+				padding: 0px 35px 0 20px;
+			}
+			button{
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				@include size(35px,35px);
+				background: #fff;
+				border:#fff;
+				i{
+					font-size: 18px;
+					color: $gray-light;
+				}
+			}
+		}
+	}
+	ul{
+		margin-bottom: 15px;
+		li{
+			position: relative;
+			line-height: 30px;
+			padding:10px 0px;
+			border-bottom:1px solid #eee;
+			a{
+				@extend %style_link;
+				&:before{
+					font-family: "FontAwesome";
+					font-size: 12px;
+					color: #a1a1a1;
+					content: "";
+					margin-right:5px; 					
+				}
+			}
+			span{
+				position: absolute;
+				right: 0px;
+				top: 15px;
+				font:300 12px "Oswald";
+				letter-spacing: 2px;
+				color: #000;
+			}
+		}
+	}
+	h4{
+		font-style: normal;
+		border-bottom: 1px solid $gray-lighter;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #333;
+		font-weight: 700;
+	}
+	.social{
+		padding:30px 0px;
+		a{
+			margin-right:30px; 
+			margin-left:10px; 
+			&:last-child{
+				margin-right: 0px;
+			}
+			i{
+				color: #000;
+				font-size: 20px;
+			}
+		}
+	}
+	.newsletter-content-widget{
+		height: 280px;
+		form{
+			height: 105px;
+			input,button{
+				height: 50px;
+				width:100%;
+			}
+			input{
+				bottom:50px;
+				padding: 0px 20px;
+			}
+			button{
+				color: #fff;
+				background:#000;
+				border-left:none;
+				border-top:2px solid #000;
+			}
+		}
+	}
+	.related-post{
+		.images{
+			display: inline-block;
+			max-width:70px;
+			float: left;
+			margin-right:10px; 
+			margin-top:7px; 
+			img{
+				width: 100%;
+			}		
+		}
+		h3{
+			a{
+				text-transform: uppercase;
+				font:300 12px/20px "Oswald";
+				letter-spacing: 3px;
+				color: #000;
+				display: inline-block;
+				margin-bottom: 4px;
+			}
+		}
+		p{
+			font:300 12px/15px "Poppins";
+			color: #c4c4c4;
+		}
+		.items{
+			display: inline-block;
+			width:100%;
+			margin-bottom: 13px;
+			padding-bottom:20px;
+			border-bottom:1px solid #e6e6e6;
+			&:last-child{
+				border: none;
+			}
+		}
+	}
+	.wrap-instag{
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		&:before{
+			background: #fff;
+			width: 6px;
+			height:100%;
+			left: 66.66666%;
+			top:0px;
+			margin-left:-3px;
+			position: absolute;
+			content:"";
+		}
+		.instag{
+			&:after{
+				background: #fff;
+				height: 6px;
+				width:100%;
+				left: 0px;
+				top:50%;
+				margin-top:-3px;
+				position: absolute;
+				content:"";
+			}
+			&:before{
+				background: #fff;
+				width: 6px;
+				height:100%;
+				left: 33.33333%;
+				top:0px;
+				margin-left:-3px;
+				position: absolute;
+				content:"";
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+	&.tags-cloud{
+		a{
+			display: inline-block;
+			font:300 12px/40px "Oswald";
+			height: 42px;
+			padding:0 15px;
+			color: #000;
+			letter-spacing: 3px;
+			text-transform:uppercase;	
+			border:1px solid #000;
+			margin-right:3px;
+			&:hover{
+				background:#e95252;
+				border-color:#e95252;
+				color: #fff;
+			} 
+		}
+	}
+}
+.my-account{
+	margin-bottom: 50px;
+	.widget ul li{
+		margin-bottom: 20px;
+	}
+	.breadcrumb{
+		margin-bottom: 80px;
+	}
+	.contact-form{
+		.link-button{
+			float: right;
+		}
+	}
+}
+.connect-icon{
+	li{
+		display: inline-block;
+		i{
+			color: #666;
+			font-size: 20px;
+			background: #eaeaea;
+			height: 50px;
+			width: 50px;
+			padding:16px;
+			border-radius:50%;
+			text-align: center;
+			&:hover{
+				background: $brand-home4;
+				color: #fff;
+			}
+		}
+	}
+}
+.widget{
+	.newsletter-content form input{
+		font-size: 12px;
+		padding-left:10px;
+	}
+	.banner-col-left{
+		img{
+			width: 100%;
+			max-width: 330px;
+		}
+	}
+}

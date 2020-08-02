@@ -1,0 +1,197 @@
+table.table.cart-table{
+	tr{
+		&:first-child{
+			td{
+				border-top:2px solid #000; 
+			}
+		}
+	}
+	th{
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: "Oswald";
+		color: #000;
+		border: none ;
+		font-weight:700;
+		letter-spacing: 2px;
+		padding:0px;
+		padding-bottom: 5px;
+		padding-top:35px;
+	}
+	td{
+		padding: 30px 0px;
+		vertical-align: middle;
+		&:first-child{
+			width: 120px;
+			img{
+				@include size(100px,auto);
+			}
+		}
+		&:nth-child(2){
+			a{
+				color: #000;	
+				font-size: 14px;
+				font-family: "Poppins";
+				font-weight: 400;
+			}		
+			p.price{
+				font-family: "Poppins";
+				color: #979797;
+				font-size: 14px;
+			}	
+		}
+		&:nth-child(3){
+			color: #000;
+			font-size: 14px;
+			font-family: "Poppins";
+			input{
+				border:none;
+				box-shadow:none;
+			}
+			span{
+				position:absolute;
+				cursor: pointer;
+				font-size: 12px;
+				&.minus{
+					left: 0px;
+					bottom:-20px;
+				}
+				&.plus{
+					top: -20px;
+					left: 0px;
+				}
+				i{
+					&.fa-minus{
+						&:before{
+							content: "";
+						}
+					}
+					&.fa-plus{
+						&:before{
+							content: "";
+						}
+					}
+				}
+			}
+			.quantity{
+				display: inline-block;
+				position: relative;
+			}
+		}
+		&:nth-child(4){
+			font-size: 14px;
+			font-family:"Poppins";
+			color: #000;
+			font-weight:400;
+
+		}
+	}
+	&.wishlist{
+		td{
+			&:nth-child(5){
+				text-transform: uppercase;
+				font-style: normal;
+				font-size: 15px;
+				color: $gray-dark;
+			}
+			&:nth-child(6){
+				a{
+					color: $gray-dark;
+					background: #f2f2f2;
+					padding:10px;
+					display: inline-block;	
+					&:hover{
+						color: #fff;
+						background:$brand-primary;
+					}
+				}
+				
+			}
+		}
+	}
+}
+.caculate-shipping{
+	.form-group{
+		&:after,&:before{
+			display: inline ;
+		}
+	}
+	button{
+		margin-top: 30px;
+	}
+}
+.coupon{
+	p{
+		color: $gray-light;
+		line-height: 20px;
+		margin-bottom: 30px;
+		padding-top:10px;
+	}
+	button{
+		margin-top: 40px;
+	}
+}
+.text-price{
+	ul{
+		li{
+			display: block;
+			padding: 10px 0px;
+			border-bottom: 1px solid $gray-lighter;
+			width: 100%;
+			float: left;
+			.text{
+				font-size: 13px;
+				color: $gray;
+				float: left;
+			}
+			.number{
+				float: right;
+				color: $gray;
+				font-size: 18px;
+				line-height: 20px;
+			}
+		}
+	}
+	a{
+		margin-top: 30px;
+	}
+}
+@include maxtable{
+	table.table{
+		tr{
+			th{
+				&.description,&.product-avai,&.total-price{
+					display: none;
+				}
+			}
+			td{
+				&.description,&.product-avai,&.total-price{
+					display: none;
+				}
+				&:nth-child(5){
+					input{
+						width: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+@include maxmobile{
+	table.table.cart-table{
+		tr{
+			th{
+				font-size: 10px;
+			}
+			td{
+				padding: 30px 7px;
+				img{
+					width: 50px;
+				}
+				&:nth-child(4){
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
